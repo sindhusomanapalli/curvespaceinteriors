@@ -1,0 +1,213 @@
+/* assets/style.css — unique design for Curve Space Interiors */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #6b6b6b;
+    --accent: #c59d5f;
+    --accent-dark: #b58846;
+    --card: #fbf8f5;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit
+}
+
+
+/* NAVBAR */
+
+.nav-bg {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #f0f0f0
+}
+
+.logo-img {
+    height: 46px;
+    width: auto
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text)
+}
+
+.brand-sub {
+    font-size: 11px;
+    color: var(--muted)
+}
+
+
+/* hero */
+
+.hero {
+    padding: 120px 0 40px;
+    background: linear-gradient(180deg, rgba(197, 157, 95, 0.02), transparent);
+}
+
+.hero-inner {
+    max-width: var(--max-width);
+    margin: 0 auto
+}
+
+.display-5 {
+    font-weight: 700
+}
+
+.contact-inline {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap
+}
+
+.contact-inline a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+
+/* hero visual card */
+
+.hero-card {
+    position: relative
+}
+
+.hero-badge {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+
+/* service cards */
+
+.service-card {
+    background: linear-gradient(180deg, #fff, #fbfbfb);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.05);
+    transition: transform .3s ease, box-shadow .3s;
+    height: 100%
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(16, 24, 40, 0.09)
+}
+
+
+/* section title */
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 6px
+}
+
+
+/* project card */
+
+.project-card img {
+    height: 240px;
+    object-fit: cover
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden
+}
+
+
+/* footer */
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #f3f3f3
+}
+
+.footer-logo {
+    height: 52px;
+}
+
+
+/* buttons */
+
+.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent)
+}
+
+.btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark)
+}
+
+.btn-outline-dark {
+    border: 1px solid #e6e6e6
+}
+
+
+/* forms */
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ececec
+}
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 13px
+}
+
+
+/* team avatars */
+
+.avatar-lg {
+    width: 76px;
+    height: 76px;
+    border-radius: 12px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto
+}
+
+
+/* responsive tweaks */
+
+@media (max-width:992px) {
+    .hero {
+        padding-top: 100px
+    }
+    .brand-title {
+        display: none
+    }
+    .brand-sub {
+        display: none
+    }
+}
